@@ -1,0 +1,19 @@
+{
+  "diagnostic.enable": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "Markdown",
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "html"
+  ],
+
+  "eslint.autoFixOnSave": true,
+
+  "prettier.singleQuote": true,
+  "prettier.eslintIntegration": true,
+  "prettier.stylelintIntegration": false,
+  "prettier.disableSuccessMessage": true,
+  "suggest.removeDuplicateItems": true
+}

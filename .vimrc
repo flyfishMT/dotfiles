@@ -2,7 +2,11 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" For windows10
 set runtimepath+=~/vimfiles,~/vimfiles/colors
+
+" ================ Plugins ====================
+source $HOME/.config/vim/plugins.vimrc
 
 " ================ General Config ====================
 set number    " show line numbers
@@ -47,19 +51,23 @@ set guicursor+=a:blinkon0
 set guifont=Consolas:h11:cANSI
 "set clipboard=unnamedplus
 
+" ================ Plugin Config ====================
+" move coc config file from .vim to .config to keep things consistent
+let g:coc_config_home='$HOME/.config/vim'
+
 " fzf
 nnoremap <C-p> :Files<CR>
 
 
+" color scheme
 if has('gui_running')
   colorscheme one
 else 
-  colorscheme solarized
-  set background=dark
+  " colorscheme nord
+ colorscheme solarized
+ set background=dark
 endif
 
-" https://github.com/dense-analysis/ale#vim-8-on-windows
-" Put these lines at the very end of your vimrc file.
 
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
