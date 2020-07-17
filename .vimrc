@@ -54,6 +54,8 @@ set guifont=Consolas:h11:cANSI
 " ================ Plugin Config ====================
 " move coc config file from .vim to .config to keep things consistent
 let g:coc_config_home='$HOME/.config/vim'
+" prettier format file with :Prettier
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " fzf
 nnoremap <C-p> :Files<CR>
