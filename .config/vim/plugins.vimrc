@@ -7,11 +7,15 @@ Plug 'tpope/vim-fugitive'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 
 " Fuzzy Search
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug '~/.fzf'
 Plug 'junegunn/fzf.vim'
 
 " Color Schemes
-Plug 'arcticicestudio/nord-vim'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
+
+" Status Bar
+Plug 'vim-airline/vim-airline'
 
 " Syntax Highlighting And Indentation For 100+ Languages
 Plug 'sheerun/vim-polyglot'

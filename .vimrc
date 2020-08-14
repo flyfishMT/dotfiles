@@ -3,7 +3,7 @@
 set nocompatible
 
 " For windows10
-set runtimepath+=~/vimfiles,~/vimfiles/colors
+set runtimepath+=~/vimfiles,~/vimfiles/colors,~/.fzf
 
 " ================ Plugins ====================
 source $HOME/.config/vim/plugins.vimrc
@@ -65,9 +65,8 @@ nnoremap <C-p> :Files<CR>
 if has('gui_running')
   colorscheme one
 else 
-  " colorscheme nord
- colorscheme solarized
- set background=dark
+ colorscheme onehalfdark
+ let g:airline_theme='onehalfdark'
 endif
 
 
