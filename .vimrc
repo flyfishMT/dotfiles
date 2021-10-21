@@ -58,16 +58,15 @@ let g:coc_config_home='$HOME/.config/vim'
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " fzf
-nnoremap <C-p> :Files<CR>
+nnoremap <C-p> :FZF<CR>
 
 
 " color scheme
 if has('gui_running')
-  colorscheme one
+  colorscheme onehalflight
 else 
-  " colorscheme nord
- colorscheme solarized
- set background=dark
+ "colorscheme onehalfdark
+ let g:airline_theme='onehalfdark'
 endif
 
 
