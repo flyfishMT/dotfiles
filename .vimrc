@@ -65,7 +65,7 @@ nnoremap <C-p> :FZF<CR>
 if has('gui_running')
   colorscheme onehalflight
 else 
- "colorscheme onehalfdark
+ colorscheme onehalfdark
  let g:airline_theme='onehalfdark'
 endif
 
