@@ -4,7 +4,7 @@ call plug#begin('~/.local/share/vim/plugged')
 Plug 'tpope/vim-fugitive'
 
 " Autocompletion, Linting & Intellisense
-Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Fuzzy Search
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
