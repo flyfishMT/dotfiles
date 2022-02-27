@@ -60,15 +60,13 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " fzf
 nnoremap <C-p> :FZF<CR>
 
-
 " color scheme
-if has('gui_running')
-  colorscheme onehalflight
-else 
- colorscheme onehalfdark
- let g:airline_theme='onehalfdark'
+if (has("termguicolors"))
+  set termguicolors " enable true colors support
 endif
-
+let g:dracula_colorterm = 0
+let g:dracula_italic = 1
+colorscheme dracula
 
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
