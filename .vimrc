@@ -19,6 +19,10 @@ set hidden
 " Turn on syntax highlighting
 syntax on
 
+" Remaps <space> as <leader> key
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+
 " ================ Search ====================
 set hlsearch
 set incsearch
