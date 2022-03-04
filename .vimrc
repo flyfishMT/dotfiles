@@ -19,6 +19,10 @@ set hidden
 " Turn on syntax highlighting
 syntax on
 
+" Remaps <space> as <leader> key
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+
 " ================ Search ====================
 set hlsearch
 set incsearch
@@ -58,17 +62,15 @@ let g:coc_config_home='$HOME/.config/vim'
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " fzf
-nnoremap <C-p> :Files<CR>
-
+nnoremap <C-p> :FZF<CR>
 
 " color scheme
-if has('gui_running')
-  colorscheme one
-else 
- colorscheme onehalfdark
- let g:airline_theme='onehalfdark'
+if (has("termguicolors"))
+  set termguicolors " enable true colors support
 endif
-
+let g:dracula_colorterm = 0
+let g:dracula_italic = 1
+colorscheme dracula
 
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.

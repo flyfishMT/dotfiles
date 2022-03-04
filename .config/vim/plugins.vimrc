@@ -4,15 +4,14 @@ call plug#begin('~/.local/share/vim/plugged')
 Plug 'tpope/vim-fugitive'
 
 " Autocompletion, Linting & Intellisense
-Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Fuzzy Search
-" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug '~/.fzf'
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 " Color Schemes
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Status Bar
 Plug 'vim-airline/vim-airline'
@@ -20,8 +19,14 @@ Plug 'vim-airline/vim-airline'
 " Syntax Highlighting And Indentation For 100+ Languages
 Plug 'sheerun/vim-polyglot'
 
+" tmux integration
+" this allows seamless vim movements between vim and tmux
+" requires tmux plugin
+Plug 'christoomey/vim-tmux-navigator'
+
 " Utilities
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 
+" Initialize plugin system
 call plug#end()
