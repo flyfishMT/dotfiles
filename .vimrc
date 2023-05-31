@@ -7,6 +7,7 @@ set runtimepath+=~/vimfiles,~/vimfiles/colors,~/.fzf
 
 " ================ Plugins ====================
 source $HOME/.config/vim/plugins.vimrc
+source $HOME/.config/vim/coc.vimrc
 
 " ================ General Config ====================
 set number    " show line numbers

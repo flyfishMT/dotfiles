@@ -28,5 +28,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 
+" Code
+Plug 'editorconfig/editorconfig-vim'
+
 " Initialize plugin system
 call plug#end()
