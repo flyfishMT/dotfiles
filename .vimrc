@@ -7,7 +7,7 @@ set runtimepath+=~/vimfiles,~/vimfiles/colors,~/.fzf
 
 " ================ Plugins ====================
 source $HOME/.config/vim/plugins.vimrc
-source $HOME/.config/vim/coc.vimrc
+" source $HOME/.config/vim/coc.vimrc
 
 " ================ General Config ====================
 set number    " show line numbers
@@ -31,9 +31,15 @@ set ignorecase
 set smartcase
 
 " ================ Indentation ====================
-set tabstop=2 "show existing tab with 2 spaces width
-set shiftwidth=2 " when indenting with '>', use 2 spaces width
+" commented out in favor of editorconfig
+" set tabstop=2 "show existing tab with 2 spaces width
+" set shiftwidth=2 " when indenting with '>', use 2 spaces width
 set expandtab " On pressing tab, insert 2 spaces
+"
+" show nonspace whitespace
+set list
+" show spaces as '.'
+set lcs+=space:.
 
 filetype plugin indent on
 
@@ -64,6 +70,12 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " fzf
 nnoremap <C-p> :FZF<CR>
+map <leader>q :bd<CR>
+
+" vim-prettier
+" Allow auto formatting (on save) for files without "@format" or "@prettier" tag
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
 
 " color scheme
 if (has("termguicolors"))
