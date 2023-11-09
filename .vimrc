@@ -3,7 +3,7 @@
 set nocompatible
 
 " For windows10
-set runtimepath+=~/vimfiles,~/vimfiles/colors,~/.fzf
+" set runtimepath+=~/vimfiles,~/vimfiles/colors,~/.fzf
 
 " ================ Plugins ====================
 source $HOME/.config/vim/plugins.vimrc
@@ -39,7 +39,7 @@ set expandtab " On pressing tab, insert 2 spaces
 " show nonspace whitespace
 set list
 " show spaces as '.'
-set lcs+=space:.
+" set lcs+=space:.
 
 filetype plugin indent on
 
@@ -81,9 +81,9 @@ let g:prettier#autoformat_require_pragma = 0
 if (has("termguicolors"))
   set termguicolors " enable true colors support
 endif
-let g:dracula_colorterm = 0
-let g:dracula_italic = 1
-colorscheme dracula
+" let g:dracula_colorterm = 0
+" let g:dracula_italic = 1
+" colorscheme dracula
 
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.

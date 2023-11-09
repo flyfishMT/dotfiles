@@ -11,3 +11,9 @@ export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
 # add bin to path for custom scripts
 export PATH="$PATH:$HOME/bin"
 
+export PATH=/opt/homebrew/bin:$PATH
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
