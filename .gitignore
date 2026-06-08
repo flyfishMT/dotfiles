@@ -1,0 +1,10 @@
+# Bare dotfiles git directory (never track the repo DB)
+.dotfiles/
+# Neovim runtime logs (not config)
+.config/nvim/nvim.log
+.config/nvim/*.log
+# macOS junk
+.DS_Store
+# Optional: block common secret filenames if you ever add from $HOME
+.env
+.env.*
