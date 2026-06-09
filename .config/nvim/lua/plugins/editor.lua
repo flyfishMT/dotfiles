@@ -34,7 +34,26 @@ return {
     },
     cmd = "Telescope",
     config = function()
-      require("telescope").setup({})
+      require("telescope").setup({
+        defaults = {
+          vimgrep_arguments = {
+            "rg",
+            "--color=never",
+            "--no-heading",
+            "--with-filename",
+            "--line-number",
+            "--column",
+            "--smart-case",
+            "--hidden",
+            "--no-require-git",
+          },
+        },
+        pickers = {
+          find_files = {
+            find_command = { "rg", "--files", "--hidden", "--no-require-git" },
+          },
+        },
+      })
     end,
   },
 }
