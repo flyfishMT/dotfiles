@@ -4,16 +4,17 @@ Full credit to [Reference Article](https://www.atlassian.com/git/tutorials/dotfi
 
 ## Install dotfiles onto a new system 
 
-Prior to the installation make sure you have committed the alias to your .bashrc or .zshrc:
 
-````
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-````
-
-Now clone your dotfiles into a bare repository in a "dot" folder of your $HOME:
+Clone your dotfiles into a bare repository in a "dot" folder of your $HOME:
 
 ````
 git clone --bare <git-repo-url> $HOME/.dotfiles
+````
+
+One time - create dotfiles alias for checkout
+
+````
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ````
 
 Checkout the actual content from the bare repository to your $HOME:
@@ -31,9 +32,6 @@ config config --local status.showUntrackedFiles no
 ## Plugins 
 
 Install 
-- [vim-plug](https://github.com/junegunn/vim-plug)
 - [ripgrep](https://github.com/BurntSushi/ripgrep#installation)
 - [fzf](https://github.com/junegunn/fzf#using-git)
 
-## .BASHRC additions
-export FZF_DEFAULT_COMMAND='rg --files --hidden --no-require-git'
