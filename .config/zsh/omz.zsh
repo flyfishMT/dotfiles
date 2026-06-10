@@ -1,2 +1,8 @@
 ZSH_THEME="dracula"
-plugins=(git vi-mode)
+plugins=(
+  zsh-completions
+  zsh-autosuggestions
+  git 
+  vi-mode 
+  gcloud
+)
