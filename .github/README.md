@@ -25,13 +25,18 @@ dotfiles checkout
 Set the flag showUntrackedFiles to no on this specific (local) repository:
 
 ````
-config config --local status.showUntrackedFiles no
+dotfiles config --local status.showUntrackedFiles no
 ````
 
+Setup
+````
+source ~/.zshrc
+````
 
 ## Plugins 
 
 Install 
+- [OMZ](https://github.com/ohmyzsh/ohmyzsh)
 - [ripgrep](https://github.com/BurntSushi/ripgrep#installation)
 - [fzf](https://github.com/junegunn/fzf#using-git)
 
